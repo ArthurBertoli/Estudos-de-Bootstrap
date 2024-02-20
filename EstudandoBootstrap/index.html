@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operação L.E.I.T.E.</title>
+    <meta name="description" content="width=device-width, initial-scale=1">
+    <!--Link para Bootstrap CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--Link para Bootstrap Theme (opcional)-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <!--Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-... (hash) ..." crossorigin="anonymous" />
+
+</head>
+<body>
+    
+<!--Redesign (?)-->
+
+    <div class="container">
+        <form class="col-lg-8 col-lg-offset-2 my_form">
+            <img src="images/hdcagency_logo.svg" class="center-block" alt="">
+            <h2 class="text-center">Please sign in</h2>
+            <label for="inputEmail" class="sr-only">Email address</label>
+            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+            <label for="inputPassword" class="sr-only">Password</label>
+            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="remember-me"> Remember me
+                </label>
+            </div>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+        </form>
+    </div>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<!--Carousel-->
+<!--
+    <div class="jumbotron">
+        <div class="container">
+            <button id="pause">Pausar</button>
+            <button id="anterior">Anterior</button>
+            <button id="proximo">Próximo</button>
+
+            <input type="text" id="number" value="0"><button id="start">Iniciar</button>
+
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel" data-slide-to="1"></li>
+                    <li data-target="#carousel" data-slide-to="2"></li>
+                </ol>
+                
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="images/proj6.jpg" alt="">
+                        <div class="carousel-caption">
+                            PRIMEIRO
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/pattern.png" alt="">
+                        <div class="carousel-caption">
+                            SEGUNDO
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/profile1.jpg" alt="">
+                        <div class="carousel-caption">
+                            TERCEIRO
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#carousel" class="left carousel-control" data-slide="prev">
+                <i class="glyphicon glyphicon-chevron-left"></i>
+            </a>
+
+            <a href="#carousel" class="right carousel-control" data-slide="next">
+                <i class="glyphicon glyphicon-chevron-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        var btn_pause    = $('#pause');
+        var btn_prev     = $('#anterior');
+        var btn_next     = $('#proximo');
+        var btn_start    = $('#start');
+        var input_number = $('#number');
+        var carousel     = $('#carousel');
+
+        btn_pause.on('click', function(){
+            $carousel.carousel('pause');    
+        });
+
+    </script>-->
+
+<!--Alert-->
+    <div class="">
+        <div class="container">
+            <div class="alert alert-success alert-dismissible">
+                <h1>Atenção fella!!</h1>
+                <p>Boa tarde.</p>
+                <a href="https://www.youtube.com/watch?v=WWHpFsAf1t4&list=PLd4yfya-3PIomj2O-W0s9A-0i1ThWJncj&index=14" class="alert-link">Da um play</a>
+            <button class="close" data-dismiss="alert">x</button>
+            </div>
+        </div>
+    </div>
+
+<!--Popover-->
+    <div class="">
+        <div class="container">
+            <button data-toggle="popover" data-content="Olá seja bme vindo" title="Mensagem">&times;</button>
+        </div>
+    </div>
+    <script> $('[data-toggle="popover"]').popover({
+        placement:"bottom",
+        html:true,
+        animation:false
+    });
+    </script>
+
+<!--Tooltip (balões de fala)-->
+    <div class="">
+        <div class="container">
+            <button class="btn btn-lg btn-default" data-toggle="tootlip" data-placement="left" title="informaçaooo">informaçao?</button>
+        </div>
+    </div>
+    <script>$('[data-toggle="tooltip"]').tooltip();</script>
+
+
+<!--Modal-->
+    <div class="">
+        <div class="container">
+            <div class="modal fade" id="myModal">
+                <div class="modal=dialog modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title">Titulo do modal</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>One fine body&hellip;</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Open</button>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+<!--Panel-->
+    <div class="">
+        <div class="container">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Lista</h3>
+                </div>
+                <div class="panel-body"> 
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Cod.</th>
+                                <th>Nome</th>
+                                <th>Salario</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>001</td>
+                                <td>Andre</td>
+                                <td>1.500,00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!--Nav e navbar-->
+<!---
+    <nav class="navbar navbar-outro navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <img src="images/proj6.jpg" width="25" alt="Brand"/>
+                </a>
+            </div>
+            <button class="btn btn-default navbar-btn">Button</button>
+            <a href="#" class="navbar-link">Clique</a>
+            <span class="navbar-text">textotextotexoteteoxteoxtoexto</span>
+            <div class="navbar-right">
+                <form action="#" class="navbar-form">
+                    <input type="text" placeholder="oi" class="form-control">
+                </form>
+            </div>
+        </div>
+    </nav>-->
+
+    <div class="">
+        <div class="container">
+            <div class="col-md-7">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+                    <li><a href="#profile" data-toggle="tab">Profile</a></li>
+                    <li><a href="#messages" data-toggle="tab">Messages</a></li>
+                </ul>
+
+                <div class="tab-content">
+                    <div class="tab-pane active" id="home">Conteudo do home</div>
+                    <div class="tab-pane active" id="profile">Conteudo do profile</div>
+                    <div class="tab-pane active" id="messages">Conteudo do messages</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--Icones-->
+    <div class="">
+        <div class="container">
+            <button class="btn btn-primary">
+                <span class="glyphicon"></span>
+            </button>
+            <button class="btn btn-info">
+                <i class="fa fa-lock"></i>
+            </button>
+        </div>
+    </div>
+
+
+<!--Classes auxiliares--> 
+    <div class="show">mostra</div>
+    <div class="hidden">esconde</div> 
+    <div class="hidden-lg">esconde mobile</div> 
+    <div class="hidden-md">esconde tablet</div> 
+    <div class="hidden-xs">esconde monitor medio</div>     
+    <div class="hidden-sm">esconde monitor grande</div> 
+    
+    <div class="visible-xs-12">Mostra somente no mobile</div>
+    <div class="visible-sm-12">Mostra somente no tablet</div>
+    <div class="visible-md-12">Mostra somente no monitor medio</div>
+    <div class="visible-lg-12">Mostra somente no monitor grande</div>
+
+    <div class="bg-primary">fundo</div>
+    <div class="bg-info">fundo</div>
+    <div class="bg-danger">fundo</div>
+    <div class="bg-warning">fundo</div>
+    <div class="bg-success">fundo</div>
+
+    <div class="">
+        <div class="container">
+            <div class="embed-responsive embed-responsive-4by3">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/watch?v=DV7w5RTjBfM" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <img src="images/agencia.jpg" class="img-responsive" alt=""/>
+            <img src="images/banner1.png" class="img-thumbnail" alt=""/>
+        </div>
+        <div class="col-md-6">
+            <img src="images/banner3.png" class="img-circle" alt=""/>
+            <img src="images/cidadeparallax.png" class="center-block" alt=""/>
+        </div>
+    </div>
+
+<!--Botoes-->
+    <div class="jumbotron">
+        <div class="container">
+            <div class="btn-group" data-toggle="buttons">
+                <label for="" class="btn btn-primary active">
+                    <input type="radio" name="options" id="opt1" checked="true"> radio box 01
+                </label>
+                <label for="" class="btn btn-primary active">
+                    <input type="radio" name="options" id="opt2"> radio box 02
+                </label>
+            </div>
+           <button class="btn btn-lg btn-primary btn-loading" data-loading-text="Aguarde....">Finalizar</button>
+        </div>
+    </div>
+
+<!--Formulario-->
+    <div class="container">
+        <form class="form-horizontal">
+            <input type="text" class="form-control">
+            <input type="text" class="form-control input-sm">
+            <input type="text" class="form-control input-lg">
+
+
+            <div class="has-warning">
+                <label for="warning" class="control-label">E-mail</label>
+                <input type="text" class="control-label" id="warning"></label>
+            </div>
+
+             <div class="has-success">
+                <label for="success" class="control-label">E-mail</label>
+                <input type="text" class="control-label" id="success"></label>
+            </div>
+
+        
+            <div class="checkbox">
+                <input type="checkbox"/>Valor
+            </div>
+
+            <div class="radio">
+                <input type="radio"/>Valor
+            </div>
+
+        </form>
+    </div>
+
+<!--Tabela-->
+    <div class="container">
+        <div class="col-md-6 col-md-offset-3">
+            <table class="table table-hover table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th>Protocolo</th>
+                        <th>Razao Social</th>
+                        <th>CNJP</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="danger">
+                        <td>00001</td>
+                        <td>Bootstrap essencial - ME</td>
+                        <td>00.0000.000.00/00.0.00.0</td>
+                    </tr><tr class="success">
+                        <td>00001</td>
+                        <td>Bootstrap essencial - ME</td>
+                        <td>00.0000.000.00/00.0.00.0</td>
+                    </tr><tr>
+                        <td>00001</td>
+                        <td>Bootstrap essencial - ME</td>
+                        <td>00.0000.000.00/00.0.00.0</td>
+                    </tr><tr>
+                        <td>00001</td>
+                        <td>Bootstrap essencial - ME</td>
+                        <td>00.0000.000.00/00.0.00.0</td>
+                    </tr><tr>
+                        <td>00001</td>
+                        <td>Bootstrap essencial - ME</td>
+                        <td>00.0000.000.00/00.0.00.0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+<!--Primeiras impressões-->
+    <div class="container">
+        <h1>Teste</h1>
+        <h2>Teste h2</h2>
+        <h3>teste h3</h3>
+        <h4>teste h4</h4>
+        <h5>teste h5</h5>
+        <h6>tste h6</h6>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6"> 
+            <h1 class="text-center">Alinhamento texto</h1>
+            <p class="text-left">texto aqui na esquerda</p>
+            <p class="text-right">texto direita</p>
+            <p class="text-center">texto no centro</p>
+            <p class="text-justify">texto justificado(?)</p>
+            <p class="text-nowrap">oisaodiosadio</p>
+        </div>
+        <div class="col-md-6">
+            <h2>Outros</h2>
+            <p class="text-lowercase">TESTE</p>
+
+            <ul>
+                <li>item</li>
+                <li>item</li>
+                <li>item
+                    <ul>
+                        <li>sub</li>
+                        <li>sub</li>
+                        <li>sub</li>
+                    </ul>
+                </li>
+                <li>item</li>
+                <li>item</li>
+            </ul>
+        </div>
+    </div>
+
+<!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+<!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="projetos/js/scripts.js"></script>
+<!--Button-->
+    <script>
+        $(function(){
+            $('.btn-loading').on('click', function(){
+                $btn = $(this).button('loading');
+                setTimeout(function(){
+                    $btn.button('reset');
+                }, 1000);
+            });
+        });
+    </script>
+</body>
+</html>
